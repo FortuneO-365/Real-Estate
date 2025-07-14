@@ -1,0 +1,134 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@font-face {
+  font-family:'ACRE';
+  src: url('./assets/fonts/acre-medium.woff') format('woff')
+}
+
+@theme{
+  --color-primary: #293239;
+  --color-secondary: #d2e5e9;
+  --color-comments: #f5f4f4;
+  --color-quote: #d8d3d4;
+  --color-border: #e4e4e7;
+  --color-dark-border: #27272a;
+}
+
+:root{
+  --foreground: #030f0f;
+  --background: #ffffff;
+  --third: #e3eced;
+  --border: #e4e4e7;
+  --dark-border: #27272a;
+  --input: #e7f1f3;
+  --link: #e9cc2a;
+}
+
+#something{
+  background-color: #d2e5e9;
+  opacity: 0.1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #d2e5e9 29px ), repeating-linear-gradient( #29323955, #293239 );
+}
+
+a{
+  @apply hover:text-[var(--link)]
+}
+
+h1{
+@apply text-3xl md:text-4xl lg:text-5xl
+}
+
+h2{
+  @apply text-2xl md:text-3xl lg:text-4xl
+}
+
+h3{
+ @apply text-xl md:text-2xl lg:text-3xl
+}
+
+h4{
+  @apply text-lg md:text-xl lg:text-2xl
+}
+
+h5{
+  @apply text-lg md:text-xl
+}
+
+.h6{
+  @apply text-xs md:text-base lg:text-xs
+}
+
+.splide__slide img {
+  @apply w-full h-auto rounded-lg
+}
+
+.my-carousel-progress {
+  @apply bg-secondary min-w-[200px] w-full
+}
+
+
+.my-carousel-progress-bar {
+  @apply bg-primary h-1 transition-all duration-300 ease-in-out 
+}
+
+.fa-solid{
+  @apply text-quote text-4xl
+}
+
+
+#btn.selected{
+ @apply border border-border p-0
+}
+
+#temp-nav nav{
+ @apply max-h-0 overflow-hidden bg-white transition-all duration-700 ease-in
+}
+
+#temp-nav.active nav{
+  @apply max-h-[170px]
+}
+
+#icon-list li{
+  @apply relative min-w-[34px] min-h-[34px] 
+}
+
+#icon-list li span{
+  @apply absolute border-[var(--dark-border)]
+}
+
+#icon-list li .second{
+  @apply z-10 invisible 
+}
+
+#icon-list li:hover .second{
+ @apply visible z-0 
+}
+
+#icon-list li:hover .first{
+  @apply invisible z-10 border-border
+ }
+
+#icon-list li .first{
+  @apply z-0 visible 
+}
+
+#explore li:hover span{
+  @apply translate-x-1 transition-transform duration-300
+}
+
+.boxes:hover h3{
+  @apply translate-0 transition-all duration-300
+}
+
+.boxes:hover h4{
+  @apply visible  transition-all duration-100
+}
+
+#thumbnail-slider .splide__slide{
+  @apply aspect-video overflow-hidden
+}
+
+#thumbnail-slider .splide__slide img{
+  @apply object-cover w-full h-full
+}
