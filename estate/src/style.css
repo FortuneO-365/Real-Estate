@@ -31,10 +31,6 @@
   background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #d2e5e9 29px ), repeating-linear-gradient( #29323955, #293239 );
 }
 
-a{
-  @apply hover:text-[var(--link)]
-}
-
 h1{
 @apply text-3xl md:text-4xl lg:text-5xl
 }
