@@ -25,16 +25,16 @@
         <span class="hidden md:block">
           <ul class="flex items-center gap-3">
             <li class="p-2 rounded hover:bg-secondary transition-colors duration-300">
-              <a href="about.html">About Us</a>
+              <a href="index.html" class="block size-full">Home</a>
             </li>
             <li class="p-2 rounded hover:bg-secondary transition-colors duration-300">
-              <a href="property.html">Property</a>
+              <a href="about.html" class="block size-full">About Us</a>
             </li>
             <li class="p-2 rounded hover:bg-secondary transition-colors duration-300">
-              <a href="">Agents</a>
+              <a href="property.html" class="block size-full">Property</a>
             </li>
             <li class="p-2 rounded hover:text-secondary transition-all duration-300 bg-primary text-[var(--background)]">
-              <a href="">Contact Us</a>
+              <a href="contact.html" class="block size-full">Contact Us</a>
             </li>
           </ul>
         </span>
@@ -42,10 +42,10 @@
     </div>
     <nav class="">
       <ul class="">
-        <li class="px-2 mb-2 hover:bg-secondary"><a href="about.html"></a>About us </li>
-        <li class="px-2 mb-2 hover:bg-secondary"><a href="property.html">Property</a></li>
-        <li class="px-2 mb-2 hover:bg-secondary">Agents</li>
-        <li class="px-2 mb-2 bg-primary text-[var(--background)] hover:text-secondary">Contact us</li>
+        <li class="px-2 mb-2 hover:bg-secondary"><a href="index.html" class="block w-full">Home</a></li>
+        <li class="px-2 mb-2 hover:bg-secondary"><a href="about.html" class="block w-full">About us</a> </li>
+        <li class="px-2 mb-2 hover:bg-secondary"><a href="property.html" class="block w-full">Property</a></li>
+        <li class="px-2 mb-2 bg-primary text-[var(--background)] hover:text-secondary"><a href="contact.html" class="block w-full">Contact us</a></li>
       </ul>
     </nav>
   </header>
@@ -223,7 +223,6 @@
       </div>
 
       <div id="customer-carousel" class="splide pb-20">
-
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide sm:flex sm:justify-center sm:items-center">
@@ -297,6 +296,110 @@
         </div>
       </div>
       
+    </section>
+
+    <section class="bg-primary text-white rounded-t-2xl pb-20">
+      <h2 class="font-semibold px-5 pt-10 pb-5">Meet Our Awesome Team</h2>
+      <div class=" px-5 pb-10 md:w-3/4 ">
+        <p class="pb-4 ">
+          NewState helps you easily create a real estate trading website. With the function Register, Login, Post real estate news.
+        </p>
+        <button 
+         class="text-white border px-5 py-3
+         flex items-center gap-2 rounded
+         hover:bg-white hover:text-black transition-colors duration-300
+         ">
+          View Team Members 
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 font-bold">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <div id="team-carousel" class="splide p-4 relative">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="p-4">
+                <div>
+                  <div class="mb-4">
+                    <img src="/agents/agent-1.jpg" alt="">
+                  </div>
+                  <div>
+                    <a href="./agent.html">
+                      <h3>Vladmir </h3>
+                      <p class="text-secondary">Property Agent</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="p-4">
+                <div>
+                  <div class="mb-4">
+                    <img src="/agents/agent-4.jpg" alt="">
+                  </div>
+                  <div>
+                    <a href="./agent.html">
+                      <h3>Anissa</h3>
+                      <p class="text-secondary">Property Agent</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="p-4">
+                <div>
+                  <div class="mb-4">
+                    <img src="/agents/agent-3.jpg" alt="">
+                  </div>
+                  <div>
+                    <a href="./agent.html">
+                      <h3>Mark </h3>
+                      <p class="text-secondary">Property Agent</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="p-4">
+                <div>
+                  <div class="mb-4">
+                    <img src="/agents/agent-2.jpg" alt="">
+                  </div>
+                  <div>
+                    <a href="./agent.html">
+                      <h3>Pablo</h3>
+                      <p class="text-secondary">Property Agent</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="absolute left-0 right-0 top-1/2 -translate-y-1/2 flex justify-between p-4">
+          <button class="splide__arrow--prev1">
+            <span class="block rounded-full border-2 border-secondary bg-primary text-secondary  p-2 hover:bg-secondary hover:text-primary transition-colors duration-300">          
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+              </svg>
+            </span>
+          </button>
+          <button class="splide__arrow--next1">
+            <span class="block rounded-full border-2 border-secondary bg-primary text-secondary  p-2 hover:bg-secondary hover:text-primary transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>            
+            </span>
+          </button>
+        </div>
+      </div>
     </section>
 
   </main>

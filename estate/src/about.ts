@@ -40,6 +40,27 @@ var slide2 = new Splide('#customer-carousel', {
     },
 })
 
+var slide3 = new Splide('#team-carousel', {
+  type: 'loop',
+  perPage: 1,
+  perMove: 1,
+  autoplay: true,
+  interval: 5000,
+  drag: true,
+  pauseOnHover: false,
+  pagination: false,
+  arrows:false,
+  mediaQuery: 'min',
+  breakpoints: {
+    640: {
+      perPage : 2,
+    }, 
+    1024: {
+      perPage: 3,
+    }
+  },
+})
+
 document.querySelector<HTMLButtonElement>('.splide__arrow--prev')!.addEventListener('click', () => {
     slide2.go('-1'); // Move to previous slide
 });
@@ -48,7 +69,16 @@ document.querySelector<HTMLButtonElement>('.splide__arrow--next')!.addEventListe
     slide2.go('+1'); // Move to next slide
 });
 
+document.querySelector<HTMLButtonElement>('.splide__arrow--prev1')!.addEventListener('click', () => {
+  slide3.go('-1'); // Move to previous slide
+});
+
+document.querySelector<HTMLButtonElement>('.splide__arrow--next1')!.addEventListener('click', () => {
+  slide3.go('+1'); // Move to next slide
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     slide1.mount();
     slide2.mount();
+    slide3.mount();
 });

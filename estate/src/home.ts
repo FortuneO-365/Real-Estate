@@ -82,3 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
   slide2.mount();
   countUp();
 });
+
+
+function navigateToProperties() {
+  window.location.href = "../property.html";
+}
+
+const button = document.getElementById("button")!
+
+button.addEventListener('click', () => {
+  navigateToProperties();
+})

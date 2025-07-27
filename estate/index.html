@@ -27,16 +27,16 @@
           <span class="hidden md:block">
             <ul class="flex items-center gap-3">
               <li class="p-2 rounded hover:bg-secondary transition-colors duration-300">
-                <a href="about.html">About Us</a>
+                <a href="index.html" class="block size-full">Home</a>
               </li>
               <li class="p-2 rounded hover:bg-secondary transition-colors duration-300">
-                <a href="property.html">Property</a>
+                <a href="about.html" class="block size-full">About Us</a>
               </li>
               <li class="p-2 rounded hover:bg-secondary transition-colors duration-300">
-                <a href="">Agents</a>
+                <a href="property.html" class="block size-full">Property</a>
               </li>
               <li class="p-2 rounded hover:text-secondary transition-all duration-300 bg-primary text-[var(--background)]">
-                <a href="">Contact Us</a>
+                <a href="contact.html" class="block size-full">Contact Us</a>
               </li>
             </ul>
           </span>
@@ -44,10 +44,10 @@
       </div>
       <nav class="">
         <ul class="">
-          <li class="px-2 mb-2 hover:bg-secondary"><a href="about.html" class="w-full">About us</a> </li>
-          <li class="px-2 mb-2 hover:bg-secondary"><a href="property.html">Property</a></li>
-          <li class="px-2 mb-2 hover:bg-secondary">Agents</li>
-          <li class="px-2 mb-2 bg-primary text-[var(--background)] hover:text-secondary">Contact us</li>
+          <li class="px-2 mb-2 hover:bg-secondary"><a href="index.html" class="block w-full">Home</a></li>
+          <li class="px-2 mb-2 hover:bg-secondary"><a href="about.html" class="block w-full">About us</a> </li>
+          <li class="px-2 mb-2 hover:bg-secondary"><a href="property.html" class="block w-full">Property</a></li>
+          <li class="px-2 mb-2 bg-primary text-[var(--background)] hover:text-secondary"><a href="contact.html" class="block w-full">Contact us</a></li>
         </ul>
       </nav>
     </header>
@@ -65,12 +65,11 @@
           <p class="w-4/5">
             Browse our curated listings and let our experts guide you to a home that fits your lifestyle perfectly.
           </p>
-          <button class="bg-primary rounded-md py-3 px-5 flex items-center justify-center gap-2">
+          <button id="button" class="bg-primary rounded-md py-3 px-5 flex items-center justify-center gap-2">
             Explore properties
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4.5">
               <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-            </svg>
-            
+            </svg>           
           </button>
         </div>
       </section>
@@ -703,29 +702,35 @@
           <div class="md:w-[45%]">
             <h3 class="text-xl font-semibold mb-4">Explore</h3>
             <ul id="explore">
-              <li class="flex items-center gap-3 mb-2">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>                
-                </span>
-                <p>All Properties</p>
+              <li class="">
+                <a href="./property.html" class="flex items-center gap-3 mb-2">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>                
+                  </span>
+                  <p>All Properties</p>
+                </a>
               </li>
-              <li class="flex items-center gap-3  mb-2">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>                
-                </span>
-                <p>Our Team</p>
+              <li class="">
+                <a href="./about.html#team" class="flex items-center gap-3 mb-2">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>                
+                  </span>
+                  <p>Our Team</p>
+                </a>
               </li>
-              <li class="flex items-center gap-3 mb-2">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>                
-                </span>
-                <p>Contact</p>
+              <li class="">
+                <a href="./contact.html" class="flex items-center gap-3 mb-2">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>                
+                  </span>
+                  <p>Contact</p>
+                </a>
               </li>
             </ul>
           </div>
@@ -756,7 +761,7 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="/src/main.ts"></script>
-    <script type="module" src="/src/home.ts"></script>
+    <script type="module" src="./src/main.ts"></script>
+    <script type="module" src="./src/home.ts"></script>
   </body>
 </html>
