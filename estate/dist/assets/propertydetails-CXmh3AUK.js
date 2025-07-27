@@ -1,0 +1,1 @@
+import"./main-C0kE-iPM.js";import{S as n}from"./splide.esm--MwRR40N.js";var e=new n("#main-slider",{type:"fade",perPage:1,pagination:!1,arrows:!1,cover:!0,heightRatio:2}),a=new n("#thumbnail-slider",{perPage:4,gap:10,rewind:!0,pagination:!1});document.addEventListener("DOMContentLoaded",function(){e.sync(a),e.mount(),a.mount()});
